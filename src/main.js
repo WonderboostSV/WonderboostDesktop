@@ -1,5 +1,8 @@
-const { app, BrowserWindow } = require('electron');
-const path = require('path');
+import { app, BrowserWindow } from 'electron';
+import path from 'path';
+
+// Obtener la ruta de __dirname en módulos ES
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 let mainWindow;
 

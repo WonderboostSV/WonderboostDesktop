@@ -5,6 +5,7 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
+    "dev": "vite",
     "start": "concurrently \"npm:react-start\" \"npm:electron-start\"",
     "react-start": "vite",
     "electron-start": "wait-on http://localhost:5173 && electron .",
